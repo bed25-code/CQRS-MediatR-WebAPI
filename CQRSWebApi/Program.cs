@@ -1,5 +1,8 @@
 using CQRSWebApi.Infrastructure.Database;
-using CQRSWebApi.Services;
+using CQRSWebApi.Application.Commands.Dogs.AddDog;
+using CQRSWebApi.Application.Commands.Dogs.UpdateDog;
+using CQRSWebApi.Application.Queries.Dogs.GetAll;
+using CQRSWebApi.Application.Queries.Dogs.GetById;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSingleton<MockDatabase>();
-builder.Services.AddSingleton<IDogService, InMemoryDogService>();
+builder.Services.AddScoped<GetAllDogsQueryHandler>();
+builder.Services.AddScoped<GetDogByIdQueryHandler>();
+builder.Services.AddScoped<AddDogCommandHandler>();
+builder.Services.AddScoped<UpdateDogByIdCommandHandler>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CQRSWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91a57780b48b6fc3159fc66f35c5cb1523e86ac1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+181e76ac47ff9897970d5b4c9fa80ebaad5db961")]
 [assembly: System.Reflection.AssemblyProductAttribute("CQRSWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CQRSWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
