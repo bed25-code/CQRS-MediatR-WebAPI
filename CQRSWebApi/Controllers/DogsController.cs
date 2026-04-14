@@ -1,10 +1,5 @@
-using CQRSWebApi.Application.Commands.Dogs.AddDog;
-using CQRSWebApi.Application.Commands.Dogs.UpdateDog;
-using CQRSWebApi.Application.Dtos;
-using CQRSWebApi.Application.Queries.Dogs.GetAll;
-using CQRSWebApi.Application.Queries.Dogs.GetById;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using CQRSWebApi.Services;
 
 namespace CQRSWebApi.Controllers;
 
@@ -12,25 +7,25 @@ namespace CQRSWebApi.Controllers;
 [Route("api/[controller]")]
 public class DogsController : ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly IDogService _dogService;
 
-    public DogsController(IMediator mediator)
+    public DogsController(IDogService dogService)
     {
-        _mediator = mediator;
+        _dogService = dogService;
     }
 
     [HttpGet]
     [Route("getAllDogs")]
-    public async Task<IActionResult> GetAll()
+    public IActionResult GetAll()
     {
-        return Ok(await _mediator.Send(new GetAllDogsQuery()));
+        return Ok(_dogService.GetAll());
     }
 
     [HttpGet]
     [Route("getDogById/{dogId:guid}")]
-    public async Task<IActionResult> GetById(Guid dogId)
+    public IActionResult GetById(Guid dogId)
     {
-        var dog = await _mediator.Send(new GetDogByIdQuery(dogId));
+        var dog = _dogService.GetById(dogId);
         if (dog is null)
         {
             return NotFound();
@@ -41,32 +36,37 @@ public class DogsController : ControllerBase
 
     [HttpPost]
     [Route("addNewDog")]
-    public async Task<IActionResult> Create([FromBody] DogDto request)
+    public IActionResult Create([FromBody] DogRequest request)
     {
         if (string.IsNullOrWhiteSpace(request.Name))
         {
             return BadRequest("Name is required.");
         }
 
-        var createdDog = await _mediator.Send(new AddDogCommand(request));
+        var createdDog = _dogService.Add(request.Name.Trim());
         return Ok(createdDog);
     }
 
     [HttpPut]
     [Route("updateDog/{updatedDogId:guid}")]
-    public async Task<IActionResult> Update([FromBody] DogDto request, Guid updatedDogId)
+    public IActionResult Update([FromBody] DogRequest request, Guid updatedDogId)
     {
         if (string.IsNullOrWhiteSpace(request.Name))
         {
             return BadRequest("Name is required.");
         }
 
-        var updatedDog = await _mediator.Send(new UpdateDogByIdCommand(request, updatedDogId));
-        if (updatedDog is null)
+        var updated = _dogService.Update(updatedDogId, request.Name.Trim());
+        if (!updated)
         {
             return NotFound();
         }
 
-        return Ok(updatedDog);
+        return NoContent();
     }
+}
+
+public class DogRequest
+{
+    public string Name { get; set; } = string.Empty;
 }

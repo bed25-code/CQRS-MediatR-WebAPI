@@ -5,8 +5,6 @@
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/CQRSWebApi.runtimeconfig.json
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/CQRSWebApi.dll
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/CQRSWebApi.pdb
-/Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/MediatR.dll
-/Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/MediatR.Contracts.dll
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/Microsoft.OpenApi.dll
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll

@@ -1,13 +1,13 @@
 using CQRSWebApi.Infrastructure.Database;
+using CQRSWebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddMediatR(configuration =>
-    configuration.RegisterServicesFromAssembly(typeof(Program).Assembly));
 builder.Services.AddSingleton<MockDatabase>();
+builder.Services.AddSingleton<IDogService, InMemoryDogService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
