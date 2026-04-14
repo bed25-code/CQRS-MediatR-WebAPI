@@ -32,3 +32,4 @@
 /Users/ludvigmbp/Desktop/Nemo, Code/MediatR_CQRSWebAPI/obj/Debug/net8.0/MediatR_CQRSWebAPI.pdb
 /Users/ludvigmbp/Desktop/Nemo, Code/MediatR_CQRSWebAPI/obj/Debug/net8.0/MediatR_CQRSWebAPI.genruntimeconfig.cache
 /Users/ludvigmbp/Desktop/Nemo, Code/MediatR_CQRSWebAPI/obj/Debug/net8.0/ref/MediatR_CQRSWebAPI.dll
+/Users/ludvigmbp/Desktop/Nemo, Code/MediatR_CQRSWebAPI/obj/Debug/net8.0/MediatR_CQRSWebAPI.sourcelink.json

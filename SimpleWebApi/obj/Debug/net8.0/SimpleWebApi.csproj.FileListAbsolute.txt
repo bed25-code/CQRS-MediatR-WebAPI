@@ -63,3 +63,4 @@
 /Users/ludvigmbp/Desktop/Nemo, Code/SimpleWebApi/obj/Debug/net8.0/SimpleWebApi.pdb
 /Users/ludvigmbp/Desktop/Nemo, Code/SimpleWebApi/obj/Debug/net8.0/SimpleWebApi.genruntimeconfig.cache
 /Users/ludvigmbp/Desktop/Nemo, Code/SimpleWebApi/obj/Debug/net8.0/ref/SimpleWebApi.dll
+/Users/ludvigmbp/Desktop/Nemo, Code/SimpleWebApi/obj/Debug/net8.0/SimpleWebApi.sourcelink.json

@@ -32,3 +32,4 @@
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/obj/Debug/net8.0/CQRSWebApi.pdb
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/obj/Debug/net8.0/CQRSWebApi.genruntimeconfig.cache
 /Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/obj/Debug/net8.0/ref/CQRSWebApi.dll
+/Users/ludvigmbp/Desktop/Nemo, Code/CQRSWebApi/obj/Debug/net8.0/CQRSWebApi.sourcelink.json
