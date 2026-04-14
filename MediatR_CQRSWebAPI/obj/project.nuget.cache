@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "phlsRsQ+f7w=",
+  "dgSpecHash": "CH4mmUC9gnwsIrecSnINwd/pYSu/T94QN6ur+MjqyboKq97cThT+M7fg73Qj3B3xVEDFL4EzIRAa+qJEIEFjBA==",
   "success": true,
   "projectFilePath": "/Users/ludvigmbp/Desktop/Nemo, Code/MediatR_CQRSWebAPI/MediatR_CQRSWebAPI.csproj",
   "expectedPackageFiles": [
@@ -12,10 +12,7 @@
     "/Users/ludvigmbp/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "/Users/ludvigmbp/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "/Users/ludvigmbp/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
-    "/Users/ludvigmbp/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
-    "/Users/ludvigmbp/.nuget/packages/microsoft.netcore.app.ref/8.0.23/microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
-    "/Users/ludvigmbp/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.23/microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512",
-    "/Users/ludvigmbp/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.23/microsoft.netcore.app.host.osx-arm64.8.0.23.nupkg.sha512"
+    "/Users/ludvigmbp/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
   ],
   "logs": []
 }
