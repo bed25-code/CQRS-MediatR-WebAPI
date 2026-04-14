@@ -8,17 +8,17 @@ This repository is a beginner-friendly demonstration of different ways to build 
   A plain Web API project using simple controller + service logic (no CQRS, no MediatR, no clean architecture).
 
 - `CQRSWebApi`  
-  A single Web API project that demonstrates CQRS with commands and queries, using MediatR and an in-memory mock database.
+  A single Web API project that demonstrates CQRS with explicit commands, queries, and handlers, without MediatR.
 
 - `MediatR_CQRSWebAPI`  
-  A copy of the CQRS + MediatR approach for additional experimentation and comparison.
-
-- `Clean-CQRS-API`  
-  The original Clean Architecture example project that was cloned as the baseline reference.
+  A CQRS Web API that uses MediatR for request/handler dispatching.
 
 ## Solution file
 
-- `Clean-API.sln` is located at the repository root and includes all projects.
+- `Clean-API.sln` is located at the repository root and includes:
+  - `SimpleWebApi`
+  - `CQRSWebApi`
+  - `MediatR_CQRSWebAPI`
 
 ## Domain used for examples
 
@@ -29,6 +29,6 @@ All demo projects use the same `Dog` model concept (`Id`, `Name`) to keep the fo
 Use this repository to demonstrate:
 
 1. Standard service-based API flow
-2. CQRS flow (commands vs queries)
-3. MediatR request/handler pipeline
-4. How project structure changes from simple to more structured styles
+2. CQRS flow (commands and queries with dedicated handlers)
+3. CQRS with and without MediatR
+4. How request handling changes between simple and structured approaches
