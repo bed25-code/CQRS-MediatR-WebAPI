@@ -1,0 +1,6 @@
+@CQRSWebApi_HostAddress = http://localhost:5152
+
+GET {{CQRSWebApi_HostAddress}}/api/dogs/getAllDogs
+Accept: application/json
+
+###
